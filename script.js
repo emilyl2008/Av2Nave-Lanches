@@ -1,66 +1,41 @@
-
 class CaixaDedados {
-    constructor(nome, idade, email, cargos,salario,data,experiencia) {
+    constructor(nome, idade, email,cargo,salario,data,experiencia) {
       this.nome = nome;
       this.idade = idade;
-      this.turma = email;
-      this.cargos = cargos;
-      this.salario =salario;
+      this.email = email;
+      this.cargo = cargo;
+      this.salario = salario;
       this.data = data;
       this.experiencia = experiencia;
     }
     resumo() {
       console.log(
-        'Nome:' +
-          this.nome +
-          'Idade:' +
+        ' Nome:' +
+          this.nome  +
+          ' Idade: ' +
           this.idade +
-          'Email' +
+          ' Email: ' +
           this.email +
-          'Cargo Escolhido:'+
-          this.cargos +
-          'Pretensão Salarial: ' +
+          'Cargo que desejado:'+
+          this.cargo+
+          'Salário que Desejado:'+
           this.salario +
-          'Data de Adimissão: ' +
+          'Data de adimissão:'+
           this.data +
-          'Experiência ' +
+          'Experiencia:'+
           this.experiencia
       );
     }
-}
+  }
   
-//   const Dados = new candidato ('nome,idade,email,cargos,salario,data,experiencia');
-// console.log(Dados);
-// Dados.resumo();
+  
+  const nomeInput = document.querySelector('.nome');
+  const idadeInput = document.querySelector('.idade');
+  const emailInput = document.querySelector('.email');
+  const cargoInput = document.querySelector('.cargo');
+  const salarioInput = document.querySelector('.salario');
+  const dataInput = document.querySelector('.data');
+  const experienciaInput = document.querySelector('.experiencia');
 
-const botao = document.querySelector('.botao');
 
-const nome = document.querySelector('.nome');
-const displayNome = document.querySelector('.displayNome');
-
-const idade = document.querySelector('.idade')
-const displayIdade = document.querySelector('.displayIdade')
-
-const email =document.querySelector('.email'); 
-const displayemail =document.querySelector('.displayEmail'); 
-
-const cargos =document.querySelector('.cargos'); 
-const displaycargos =document.querySelector('.displayCargos'); 
-
-const salario =document.querySelector('.salario'); 
-const displaysalario =document.querySelector('.displaysalario'); 
-
-const data =document.querySelector('.data'); 
-const displayData =document.querySelector('.displayData'); 
-
-const experiencia =document.querySelector('.experiencia'); 
-const displayExperiencia =document.querySelector('.displayEperiencia'); 
-function cliqueNoBotao() {
-
-    displayNome.textContent = nome.value;
-
-    displayIdade.textContent = idade.value
-
-}
-
-botao.addEventListener('click', cliqueNoBotao);
+  botao.addEventListener('click', cliqueNoBotao);

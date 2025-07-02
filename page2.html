@@ -5,36 +5,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="CaixaDedados">
-      <a href="/">pg1</a>
+    <a href="/">pg1</a>
+    <a href="/page2.html" aria-current="page">pg2</a>
     
-
+    <div class="CaixaDedados">
+    
+<div class="Dados">
     <p>Nome</p>
-
     <input type="text" class="nome" />
 
-
+    
     <p>Idade</p>
-    <input type="number" class="idade" />
+    <input type="number"  class="Idade"/>
 
     <p> Email</p>
-    <input type="email"  class="email"/>
+    <input type="email" class="email" />
  
- 
-    
-  <h2>Cargos na Empresa</h2>
-  <select class="cargos">
+  <p>Cargos na Empresa</p>
+  <select class="Cargos">
     <option value="Caixa">Caixa</option>
     <option value="Cozinheiro">Cozinheiro</option>
     <option value="Barman">Barman</option>
     <option value="Gerente">Gerente</option>
-    <option value="pastel">auxiliar de cozinha</option>
-    <option value="pastel">Faxineiro</option>
-    <option value="pastel">Garçom</option>
+    <option value="Auxiliar de cozinha">Auxiliar de cozinha</option>
+    <option value="Faxineiro">Faxineiro</option>
+    <option value="Garçom">Garçom</option>
   </select>
-</div class=""></div>
 
 <p>Valor que pretende ganhar</p>
     <input type="number" class="salario" />
@@ -43,49 +45,17 @@
     <input type="date" class="data" />
 
     <p>Experiência do Candidato</p>
-    <input type="text" class="candidato" />
+    <input type="text" class="experiencia" />
 
     <button class="botao">CLIQUE AQUI</button>
-
   </div>
-
-  <div class="display">
-
-    <div class="ladoALado">
-      <p>Nome do Candidato:</p>
-      '<p class="displayNome"></p>  '
-    </div>
+    <p class="paragrafo"></p>
     
-<div class="ladoALado">
-    <p>Idade do Candidato:</p>
-    <p class="displayIdade"></p>
-  </div>
-
-    <div class="ladoALado">
-    <p> Email do Candidato:</p>
-    <p class="displayEmail"></p>
-  </div>
-
-    <div class="ladoALado">
-    <p>Cargo do Candidato:</p>
-    <p class="displayCargos"></p>
-  </div>
-
-    <div class="ladoALado">
-    <p>Salário do Candidato:</p>
-    <p class="displaySalario"></p>
-  </div>
-
-    <div class="ladoALado">
-    <p>Data de Adimissão</p>
-    <p class="displayData"></p>
-  </div>
-
-    <div class="ladoALado">
-    <p Experiência do Candidato:></p>
-    <p class="displayCadidato"></p>
-></div>
-  </div>
+<div class="Candidato">
+  
+<h1>Dados do Candidato</h1>
+<p></p>
+</div>
 
   <script type="module" src="script.js"></script>
   </body>
